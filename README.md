@@ -2,7 +2,7 @@
 
 # lunch-on-us
 
-Coding exercise to read and filter a list of customers with coords to matching proximity criteria
+Coding exercise to read and filter a list of customers with coords to matching proximity criteria. Uses [Great-circle distance](https://en.wikipedia.org/wiki/Great-circle_distance) to measure distances.
 
 # Instructions
 
