@@ -4,10 +4,16 @@ Coding exercise to read and filter a list of customers with coords to matching p
 
 # Instructions
 
-```js
+```bash
 git clone git@github.com:claudiopro/lunch-on-us.git
 cd lunch-on-us
 node index.js customers.json
+```
+
+Run tests:
+
+```bash
+npm test
 ```
 
 # License
