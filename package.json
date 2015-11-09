@@ -1,0 +1,33 @@
+{
+  "name": "lunch-on-us",
+  "version": "1.0.0",
+  "description": "Coding exercise to read and filter a list of customers with coords to matching proximity criteria ",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/claudiopro/lunch-on-us.git"
+  },
+  "keywords": [
+    "customers",
+    "distance",
+    "great",
+    "circle"
+  ],
+  "author": "Claudio Procida",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/claudiopro/lunch-on-us/issues"
+  },
+  "homepage": "https://github.com/claudiopro/lunch-on-us#readme",
+  "devDependencies": {
+    "jasmine-core": "^2.3.4",
+    "karma": "^0.13.15",
+    "karma-chrome-launcher": "^0.2.1",
+    "karma-cli": "^0.1.1",
+    "karma-commonjs": "0.0.13",
+    "karma-jasmine": "^0.3.6"
+  }
+}
