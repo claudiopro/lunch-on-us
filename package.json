@@ -4,7 +4,7 @@
   "description": "Coding exercise to read and filter a list of customers with coords to matching proximity criteria ",
   "main": "index.js",
   "scripts": {
-    "test": "karma start karma.conf.js",
+    "test": "tape test/index.js",
     "pretest-ci": "npm install",
     "test-ci": "karma start karma.conf.js --browsers PhantomJS --single-run"
   },
@@ -25,12 +25,17 @@
   },
   "homepage": "https://github.com/claudiopro/lunch-on-us#readme",
   "devDependencies": {
+    "brfs": "^1.4.1",
     "jasmine-core": "^2.3.4",
     "karma": "^0.13.15",
+    "karma-browserify": "^4.4.0",
     "karma-chrome-launcher": "^0.2.1",
     "karma-cli": "^0.1.1",
     "karma-commonjs": "0.0.13",
-    "karma-jasmine": "^0.3.6"
+    "karma-jasmine": "^0.3.6",
+    "karma-phantomjs-launcher": "^0.2.1",
+    "phantomjs": "^1.9.18",
+    "tape": "^4.2.2"
   },
   "dependencies": {
     "fs": "0.0.2",
