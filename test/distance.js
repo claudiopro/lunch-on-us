@@ -1,5 +1,5 @@
 const test = require('tape'),
-  gcd = require('../lib/great-circle-distance');
+       gcd = require('../lib/great-circle-distance');
 
 const DUBLIN = {lat: "53.3381985", lon: "-6.2592576"},
          PT1 = {lat: "52.986375", lon: "-6.043701"},
