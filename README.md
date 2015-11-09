@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/claudiopro/lunch-on-us.svg?branch=master)](https://travis-ci.org/claudiopro/lunch-on-us)
+
 # lunch-on-us
 
 Coding exercise to read and filter a list of customers with coords to matching proximity criteria
