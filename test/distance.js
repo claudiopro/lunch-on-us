@@ -16,16 +16,20 @@ test('rad2deg is a function', function(test) {
 });
 
 test('distance returns 0 for the same point', function(test) {
-  test.equal(gcd.distance(PT1, PT1), 0, 'The distance between a point and itself is 0');
+  test.equal(gcd.between(DUBLIN, DUBLIN), 0, 'The distance between a point and itself is 0');
+  test.equal(gcd.between(PT1, PT1), 0, 'The distance between a point and itself is 0');
+  // test.equal(gcd.between(PT2, PT2), 0, 'The distance between a point and itself is 0');
+  // Rounding error!
+  test.ok(Math.abs(gcd.between(PT2, PT2)) < .0001, 'The distance between a point and itself is 0');
   test.end();
 });
 
 test('point 1 is within 100 km from Dublin', function(test) {
-  test.ok(gcd.distance(PT1, DUBLIN) < 100, 'point 1 is within 100 km from Dublin');
+  test.ok(gcd.between(PT1, DUBLIN) < 100, 'point 1 is within 100 km from Dublin');
   test.end();
 });
 
 test('point 2 is beyond 100 km from Dublin', function(test) {
-  test.ok(gcd.distance(PT2, DUBLIN) > 100, 'point 2 is beyond 100 km from Dublin');
+  test.ok(gcd.between(PT2, DUBLIN) > 100, 'point 2 is beyond 100 km from Dublin');
   test.end();
 });

@@ -19,12 +19,10 @@ test('lunchonus returns customers within 100km', function(test) {
       test.equal(customers.length, 3, 'Customers closer than 100km are 3');
 
       test.ok(customers.filter(function(customer) {
-        console.log(customer.user_id);
         return valid.indexOf(customer.user_id) === -1;
       }), 'Customers closer than 100km are returned');
 
       test.ok(customers.filter(function(customer) {
-        console.log(customer.user_id);
         return invalid.indexOf(customer.user_id) !== -1;
       }), 'Customers farther than 100km are not returned');
 
