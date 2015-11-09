@@ -16,7 +16,10 @@
     "customers",
     "distance",
     "great",
-    "circle"
+    "circle",
+    "radians",
+    "free",
+    "lunch"
   ],
   "author": "Claudio Procida",
   "license": "MIT",
