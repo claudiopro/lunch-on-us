@@ -1,5 +1,3 @@
-const fs = require('fs');
+const lunchonus = require('./lib/lunchonus');
 
-const list = JSON.parse(fs.readFileSync(process.argv[2]));
-
-console.log(list);
+lunchonus(process.argv[2]).pipe(process.stdout)
