@@ -1,3 +1,5 @@
+'use strict';
+
 const lunchonus = require('./lib/lunchonus');
 
 var customers = [];
