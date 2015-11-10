@@ -15,6 +15,7 @@ The program receives a text file whose lines are JSON objects with the following
 ```bash
 git clone git@github.com:claudiopro/lunch-on-us.git
 cd lunch-on-us
+npm install
 node index.js customers.txt
 ```
 
