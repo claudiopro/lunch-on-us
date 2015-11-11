@@ -1,3 +1,5 @@
+'use strict';
+
 const test = require('tape'),
        gcd = require('../lib/great-circle-distance');
 
@@ -20,7 +22,7 @@ test('distance returns 0 for the same point', function(test) {
   test.equal(gcd.between(PT1, PT1), 0, 'The distance between a point and itself is 0');
   // test.equal(gcd.between(PT2, PT2), 0, 'The distance between a point and itself is 0');
   // Rounding error!
-  test.ok(Math.abs(gcd.between(PT2, PT2)) < .0001, 'The distance between a point and itself is 0');
+  test.ok(Math.abs(gcd.between(PT2, PT2)) < 0.0001, 'The distance between a point and itself is 0');
   test.end();
 });
 
