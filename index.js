@@ -1,10 +1,20 @@
 'use strict';
 
-const lunchonus = require('./lib/lunchonus');
+const lunchonus = require('./lib/lunchonus'),
+       filename = process.argv[2];
 
 var customers = [];
 
-lunchonus(process.argv[2])
+if (!filename) {
+  usage();
+  process.exit();
+}
+
+function usage() {
+  console.log('Usage: node index.js customers.txt');
+}
+
+lunchonus(filename)
   .on('data', function (data) {
     // Append to the list of customers
     customers.push(JSON.parse(data));
