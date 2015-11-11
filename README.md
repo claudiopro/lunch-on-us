@@ -25,6 +25,14 @@ Run tests:
 npm test
 ```
 
+## Note
+
+This code uses ES6 syntax (`const`), so if you use `node <4.0.0` you must pass the `--harmony` flag:
+
+```bash
+node --harmony index.js customers.txt
+```
+
 # License
 
 [MIT](http://opensource.org/licenses/MIT)
